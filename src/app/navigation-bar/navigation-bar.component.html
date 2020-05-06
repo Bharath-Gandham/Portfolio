@@ -1,0 +1,194 @@
+<div class='row'>
+  <div class="col-md-3">
+    <div style="background-color: rgb(241, 221, 182);" class="card text-center">
+      <div class="card-body">
+        <!--Image-->
+        <img
+            src="https://media-exp1.licdn.com/dms/image/C5103AQGUYrC-F0Qv_Q/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=huUvLCyut1gx8jFJ6DoIdVCXGDI3JrqK_dmlkLMPFPQ"
+            class="circular--portrait" alt="..." (click)='home()'>
+            <h5>Bharath Gandham</h5>
+          <p class="card-text">Full Stack Angular/.Net/Web application/UI Developer</p>
+          <hr>
+          <!--About-->
+        <h5 (click)='about()' class="card-title pointer">About</h5>
+        <p class="card-text">Masters in Science-Computer Science</p>
+        <hr>
+        <!--Experinece-->
+        <h5 (click)='experience()' class="card-title pointer">Experiences</h5>
+          <p class="card-text">Associate Software Engineer-<span style="color: purple;">Accenture</span></p>
+        <hr>
+        <!--Projects-->
+        <h5 (click)='project()' class="card-title pointer">Projects</h5>
+        <a href="https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/" class="card-text">UHCL-CSE-Portal </a>
+          <a href="https://github.com/Bharath-Gandham" class="card-text">https://github.com/Bharath-Gandham</a>
+          <hr>
+          <!--Skills & Proficiency-->
+          <h5 (click)='skillsAndProficiency()' class="card-title pointer">Skills & Proficiency</h5>
+          <p class="card-text">Angular, .Net, C#, SQL, NoSQL</p>
+          <hr>
+          <!--Contact-->
+          <h5 (click)='showContactFun()' class="card-title pointer">Contact</h5>
+          <a class="card-text pointer"href="mailto:gandham.bharath96@gmail.com">gandham.bharath96@gmail.com </a>
+          <p class="card-text">+1(331)-205-9641</p>
+      </div>
+    </div>
+
+  </div>
+  <div class='col-md-9' style='background-color: rgb(204, 237, 250);'>
+    <h2 [hidden]=!showHeading class='heading text-center' style="font-weight: bold;">Hi! I am Bharath, I'm a Software Developer</h2>
+    <!--About-->
+    <div class='mt-3 col-md-11' [hidden]=!showAbout>
+      <div class="card">
+        <div class="card-body text-justify">
+      <h5 style="color:blue">Carrer Overview</h5>
+      <p>Focused and quick learning Software engineer with experience in <span style="font-weight: bold;">Angular and .Net frameworks</span>. Experience in various stages of Software development lifecycle involving studying user requirments, analysis, design, implementation, testing, deployment, documentation and maintanence. Experience in industrial practices like <span style="font-weight: bold;">Agile methodolgy</span>, Scrum, Unit Testing, Debugging and Version Control </p>
+        </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-body text-justify">
+      <h5 style="color:blue">Education</h5>
+      <p>Master of Science, Computer Science | GPA-3.7 | May 2020</p>
+      <p>University of Houston-Clear Lake (UHCL)</p>
+      <p>Bachelor of Science, Electronics and Communication | GPA-3.87 | May 2017</p>
+       <p> CVR College of Engineering</p>
+        </div>
+      </div>
+       <hr>
+       <div class="card">
+        <div class="card-body text-justify">
+       <h5 style="color:blue">Languages</h5>
+       <p >English - Professional</p>
+       <p>Hindi - Professional</p>
+       <p>Telugu - Native</p>
+        </div>
+       </div>
+    </div>
+    <!--Experience-->
+    <div class='mt-3 col-md-11'[hidden]=!showExperience>
+      <div class="card">
+        <div class="card-body text-justify">
+      <h5 style="color:blue">Associate Software Engineer <span style="float: right; font-size: medium;">June 2017-August 2018</span></h5>
+      <p>Accenture, Hyderabad, India</p>
+      <p>Major frameworks and QA methodologies used are <span style="font-weight: bold;">Angular 4, .Net, SSMS, Accenture V model</span>. I was a part of developing a web-based automated application for the client’s specifications. Also, I supported web applications to add/modify the client’s specifications. Completed thorough unit testing after satisfying all business needs. Maintaining code secrecy and security was the most important company policy. I Provided regular updates regarding the project to the client and supervisor.
+        </p>
+      </div>
+    </div>
+      <hr>
+      <div class="card">
+        <div class="card-body text-justify">
+        <h5 style="color:blue">Graduate Teaching Assistant<span style="float: right; font-size: medium;">August 2019- Present</span></h5>
+        <p>University of Houston-Clear Lake, TX, US</p>
+        <p>Teaching assistant for Dr. Lisa Louise Lacher where I Provide technical help for the students in <span style="font-weight: bold;">HTML, CSS, JavaScript,</span> PHP and Python scripting and help them achieve good grades. Also, I prepare the answer key or supplementary notes and act as the course webmaster. </p>
+      </div>
+      </div>
+      <hr>
+      <div class="card">
+        <div class="card-body text-justify">
+      <h5 style="color:blue">Computer Lab Technical Assistant<span style="float: right; font-size: medium;">September 2018- August 2019</span></h5>
+        <p>University of Houston-Clear Lake- Pearland, TX, US</p>
+        <p>Troubleshot technical problems with desktops and related websites to UHCL. Handled network issues as well as login issues by making updates to <span style="font-weight: bold;">Databases</span>. Maintained lab area safe and secured. lab policies are also monitored.</p>
+      </div>
+      </div>
+      </div>
+      <!--Projects-->
+      <div class='mt-3 col-md-11' [hidden]=!showProjects>
+          <div class="card">
+            <div class="card-body text-justify">
+              <h5 (click)='open("https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/")' class="card-title pointer">UHCL-CSE Portal(Full Stack Angular | Agile)</h5>
+              <p>Major tools and technologies used are Microsoft visual studio code, <span style="font-weight: bold;">Angular 8</span>, Angular Material Modules, PrimeNG Modules, <span style="font-weight: bold;">Firebase </span>(for DB, Storage Buckets, Cloud Functions), Microsoft Azure-Active directory services, JavaScript, TypeScript, Bootstrap/CSS, HTML, GitHub for version control, <span style="font-weight: bold;">AWS S3 and CloudFront</span> for hosting.</p><p>
+                In this portal a user can log in using <span style="font-weight: bold;">Microsoft Authentication</span> then based upon authorization he can add access privileges for members, can create a meeting, can upload a PDF document and also write meeting minutes which can be approved/ rejected by providing certain comments. Access to collect attendance for a meeting is also provided. Also, for each important activity like action to be taken on a meeting, specified users will be notified with timely Emails using <span style="font-weight: bold;">Google Cloud Scheduler</span>.
+              </p><p>Moreover, this application provides access to upload a student admission/waiver PDF documents which can be viewed by the department authorized members and can provide a decision along with feedback.
+                </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+          <h5 (click)='open("https://github.com/Bharath-Gandham/E-Airlines-iOS-App")' class='pointer'>E Airlines</h5>
+            <p>
+              In this <span style="font-weight: bold;">iOS application,</span> the user can search for the status of flights that are currently running. Also, they can search for all the available flights from a location to another on a particular date. Moreover, this application can fetch all the nearby airports upon entering a location. All the network/data issues and errors are handled properly. All this data will be a real-time one which is fetched from <span style="font-weight: bold;"></span>Lufthansa Airlines API.
+            </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+          <h5 (click)='open("https://github.com/Bharath-Gandham/Hangman-iOS-Application")' class='pointer'>HangMan Application</h5>
+            <p>
+              In this <span style="font-weight: bold;">iOS game application,</span> the user selects a level of play, and he needs to randomly guess the words depending upon the number of alphabets available until he is out of his chances. It also makes different buzzer sounds depending upon the selection of the correct/wrong alphabet. The words are randomly picked depending upon the level of play from a <span style="font-weight: bold;"></span>Database.
+            </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Student-Library-iOS-application")' class='pointer'>Student Library</h5>
+            <p>
+              In this iOS application, the user can add books that he borrowed from the library and can set a due date. Whenever due is being approached it will throw a notification to the user. Also, he can order/delete/view/rearrange the books that he added to the local database in the app.
+            </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+            <h5 (click)='open("https://github.com/Bharath-Gandham/ToDoList-iOS-application")' class='pointer'>ToDo List</h5>
+            <p>
+              In this iOS application, user can Enter, Delete, Modify, Sort some to do things in his day to day life. Also, I used a Database in order to store and retrieve data when the application is loaded.
+            </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Number-System-Converter")' class='pointer'>Number System Converter</h5>
+            <p>
+              It is a single view iOS application where the user selects a source number system by choosing an option in segment control and gets output in remaining number systems by taking validated input with certain conditions. (Like binary input contains only 0’s and 1’s).
+            </p>
+            </div>
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-body text-justify">
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Unit-Converter-iOS-app")' class='pointer'>Unit Converter</h5>
+            <p>
+              It is a multi-view iOS application implemented by strong understanding of <span style="font-weight: bold;">MVC</span> where the user selects a choice from tab’s available and then selects the source and destination units from cells available in a table view, which navigates the user to the Input screen where he also gets a validated output and errors if occur.
+            </p>
+            </div>
+            </div>
+      </div>
+
+      <!--Skills and Proficency-->
+      <div class="mt-4" [hidden]=!showSkillsAndProficiency>
+        <div class='col-md-10' *ngFor="let skill of skills">
+          <span style="font-weight: bold;">{{skill.name}}</span>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+          aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':skill.percentile+'%'}">
+
+          </div>
+        </div>
+        <br>
+      </div>
+      </div>
+
+      <!--Contact-->
+      <div [hidden]=!showContact>
+        <div class="text-justify" style="padding-top: 20%;">
+        <div class="card col-md-6">
+          <div class="card-body">
+            <p><a href="mailto:gandham.bharath96@gmail.com"><i class="far fa-envelope"></i> gandham.bharath96@gmail.com </a></p>
+            <p><i class="fas fa-phone"></i> +1(331)-205-9641</p>
+            <p><a href="https://www.linkedin.com/in/Bharath-Gandham"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/Bharath-Gandham</a></p>
+            <p><a href="https://github.com/Bharath-Gandham"><i class="fab fa-github-square"></i> https://github.com/Bharath-Gandham</a></p>
+
+          </div>
+        </div>
+        </div>
+
+
+
+      </div>
+  </div>
+
+</div>

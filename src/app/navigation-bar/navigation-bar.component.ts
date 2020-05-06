@@ -1,0 +1,109 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'navigation-bar',
+  templateUrl: './navigation-bar.component.html',
+  styleUrls: ['./navigation-bar.component.css']
+})
+export class NavigationBarComponent implements OnInit {
+  showAbout: boolean=false;
+  showExperience:boolean=false;
+  showHeading:boolean=true;
+  showProjects:boolean=false;
+  showSkillsAndProficiency: boolean=false;
+  showContact:boolean=false;
+  //skills1={{name:"Angular",percentile:90},Dot_Net:80,SQL_and_NoSQL:95,Object_Oriented_Programming:100,Java_C};
+  skills=[{
+    name:"Angular, JavaScript/TypeScript",
+    percentile:90
+  },
+  {
+    name:'.Net & C#',
+    percentile:80
+  },
+  {
+    name:"SQL & NoSQL",
+    percentile:90
+  },
+  {
+    name:"Firebase-DB, Storage & Cloud Functions",
+    percentile:90
+  },
+  {
+    name:"HTML, CSS/BootStrap",
+    percentile:75
+  },
+  {
+    name:"Object Oriented Programming",
+    percentile:100
+  },
+  {
+    name:"Java & Swift",
+    percentile:80
+  },
+  {
+    name:"Agile, SCRUM, Version Control",
+    percentile:90
+  },
+]
+  constructor(private route: Router) {
+
+   }
+
+  ngOnInit() {
+  }
+  about(){
+    this.showAbout=true;
+    this.showHeading=false;
+    this.showExperience=false;
+    this.showProjects=false;
+    this.showContact=false;
+    this.showSkillsAndProficiency=false;
+  }
+  experience(){
+    this.showExperience=true;
+    this.showHeading=false;
+    this.showAbout=false;
+    this.showProjects=false;
+    this.showContact=false;
+    this.showSkillsAndProficiency=false;
+
+  }
+  project(){
+    this.showProjects=true;
+    this.showExperience=false;
+    this.showHeading=false;
+    this.showAbout=false;
+    this.showContact=false;
+    this.showSkillsAndProficiency=false;
+  }
+  open(url) {
+    console.log(url);
+    window.open(url, "_blank");
+  }
+  skillsAndProficiency(){
+    this.showProjects=false;
+    this.showExperience=false;
+    this.showHeading=false;
+    this.showAbout=false;
+    this.showContact=false;
+    this.showSkillsAndProficiency=true;
+  }
+  showContactFun(){
+    this.showProjects=false;
+    this.showExperience=false;
+    this.showHeading=false;
+    this.showAbout=false;
+    this.showSkillsAndProficiency=false;
+    this.showContact=true;
+  }
+  home(){
+    this.showProjects=false;
+    this.showExperience=false;
+    this.showHeading=true;
+    this.showAbout=false;
+    this.showSkillsAndProficiency=false;
+    this.showContact=false;
+  }
+}
