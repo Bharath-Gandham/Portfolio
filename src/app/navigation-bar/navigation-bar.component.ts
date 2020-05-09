@@ -60,6 +60,7 @@ export class NavigationBarComponent implements OnInit {
     this.showProjects=false;
     this.showContact=false;
     this.showSkillsAndProficiency=false;
+    document.documentElement.scrollTop = 0;
   }
   experience(){
     this.showExperience=true;
@@ -68,6 +69,7 @@ export class NavigationBarComponent implements OnInit {
     this.showProjects=false;
     this.showContact=false;
     this.showSkillsAndProficiency=false;
+    document.documentElement.scrollTop = 0;
 
   }
   project(){
@@ -77,6 +79,7 @@ export class NavigationBarComponent implements OnInit {
     this.showAbout=false;
     this.showContact=false;
     this.showSkillsAndProficiency=false;
+    document.documentElement.scrollTop = 0;
   }
   open(url) {
     console.log(url);
@@ -89,6 +92,7 @@ export class NavigationBarComponent implements OnInit {
     this.showAbout=false;
     this.showContact=false;
     this.showSkillsAndProficiency=true;
+    document.documentElement.scrollTop = 0;
   }
   showContactFun(){
     this.showProjects=false;
@@ -97,6 +101,7 @@ export class NavigationBarComponent implements OnInit {
     this.showAbout=false;
     this.showSkillsAndProficiency=false;
     this.showContact=true;
+    document.documentElement.scrollTop = 0;
   }
   home(){
     this.showProjects=false;
@@ -105,5 +110,6 @@ export class NavigationBarComponent implements OnInit {
     this.showAbout=false;
     this.showSkillsAndProficiency=false;
     this.showContact=false;
+    document.documentElement.scrollTop = 0;
   }
 }

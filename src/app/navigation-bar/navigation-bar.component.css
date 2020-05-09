@@ -1,7 +1,7 @@
 .circular--portrait {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -12,7 +12,6 @@
 }
 .pointer {
   cursor: pointer;
-  color: blue;
   text-decoration: underline;
 }
 .page-content {
@@ -27,6 +26,16 @@
 }
 .heading{
   padding-top: 25%;
+}
+.leftHeading{
+  color:white;
+  font-weight: 600;
+}
+.leftContent{
+  color:white
+}
+.leftLineColor{
+  border-color:#9e363a;
 }
 /* .image{
   background-image: url('src/assets/WhatsApp Image 2020-01-28 at 8.42.14 PM.jpeg');

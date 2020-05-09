@@ -1,40 +1,42 @@
+<!--Use this for disbaling view for certain sized views: d-none d-sm-block -->
 <div class='row'>
-  <div class="col-md-3">
-    <div style="background-color: rgb(241, 221, 182);" class="card text-center">
+  <div style="width: 25%;">
+    <div style="background-color: #161748;" class="card text-center">
       <div class="card-body">
         <!--Image-->
         <img
             src="https://media-exp1.licdn.com/dms/image/C5103AQGUYrC-F0Qv_Q/profile-displayphoto-shrink_200_200/0?e=1594252800&v=beta&t=huUvLCyut1gx8jFJ6DoIdVCXGDI3JrqK_dmlkLMPFPQ"
             class="circular--portrait" alt="..." (click)='home()'>
-            <h5>Bharath Gandham</h5>
-          <p class="card-text">Full Stack Angular/.Net/Web application/UI Developer</p>
-          <hr>
+            <h5 style='font-weight: 600; color: white;' class='d-none d-sm-block'>Bharath Gandham</h5>
+            <h6 style='font-size: small; font-weight: 600; color: white;' class='d-inline d-md-none'>Bharath Gandham</h6>
+          <p class="card-text d-none d-sm-block" style="color:white">Full Stack Angular/.Net/Web application/UI Developer</p>
+          <hr class='leftLineColor'>
           <!--About-->
-        <h5 (click)='about()' class="card-title pointer">About</h5>
-        <p class="card-text">Masters in Science-Computer Science</p>
-        <hr>
+        <h5 (click)='about()' class="card-title pointer leftHeading"><i class="fas fa-graduation-cap d-inline d-md-none"></i> <span class='d-none d-sm-block'>About</span></h5>
+        <p class="card-text d-none d-sm-block" style="color:white">Masters in Science-Computer Science</p>
+        <hr class='leftLineColor'>
         <!--Experinece-->
-        <h5 (click)='experience()' class="card-title pointer">Experiences</h5>
-          <p class="card-text">Associate Software Engineer-<span style="color: purple;">Accenture</span></p>
-        <hr>
+        <h5 (click)='experience()' class="card-title pointer leftHeading"><i class="fas fa-laptop-code d-inline d-md-none"></i><span class='d-none d-sm-block'>Experiences</span></h5>
+          <p class="card-text d-none d-sm-block" style="color:white">Associate Software Engineer-Accenture</p>
+        <hr class='leftLineColor'>
         <!--Projects-->
-        <h5 (click)='project()' class="card-title pointer">Projects</h5>
-        <a href="https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/" class="card-text">UHCL-CSE-Portal </a>
-          <a href="https://github.com/Bharath-Gandham" class="card-text">https://github.com/Bharath-Gandham</a>
-          <hr>
+        <h5 (click)='project()' class="card-title pointer leftHeading"><i class="fab fa-angular d-inline d-md-none"></i><span class='d-none d-sm-block'>Projects</span> </h5>
+        <a href="https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/" class="card-text d-none d-sm-block" style="color:white">UHCL-CSE-Portal </a>
+          <a href="https://github.com/Bharath-Gandham" class="card-text d-none d-sm-block" style="color:white">https://github.com/Bharath-Gandham</a>
+          <hr class='leftLineColor'>
           <!--Skills & Proficiency-->
-          <h5 (click)='skillsAndProficiency()' class="card-title pointer">Skills & Proficiency</h5>
-          <p class="card-text">Angular, .Net, C#, SQL, NoSQL</p>
-          <hr>
+          <h5 (click)='skillsAndProficiency()' class="card-title pointer leftHeading"><i class="fas fa-award d-inline d-md-none"></i><span class='d-none d-sm-block'>Skills & Proficiency</span> </h5>
+          <p class="card-text d-none d-sm-block" style="color:white">Angular, .Net, C#, SQL, NoSQL</p>
+          <hr class='leftLineColor'>
           <!--Contact-->
-          <h5 (click)='showContactFun()' class="card-title pointer">Contact</h5>
-          <a class="card-text pointer"href="mailto:gandham.bharath96@gmail.com">gandham.bharath96@gmail.com </a>
-          <p class="card-text">+1(331)-205-9641</p>
+          <h5 (click)='showContactFun()' class="card-title pointer leftHeading"><i class="fas fa-address-card d-inline d-md-none"></i><span class='d-none d-sm-block'>Contact</span> </h5>
+          <a class="card-text pointer d-none d-sm-block" style="color:white" href="mailto:gandham.bharath96@gmail.com">gandham.bharath96@gmail.com </a>
+          <p class="card-text d-none d-sm-block" style="color:white">+1(331)-205-9641</p>
       </div>
     </div>
 
   </div>
-  <div class='col-md-9' style='background-color: rgb(204, 237, 250);'>
+  <div style='width: 75%;  background-color: rgb(204, 237, 250);'>
     <h2 [hidden]=!showHeading class='heading text-center' style="font-weight: bold;">Hi! I am Bharath, I'm a Software Developer</h2>
     <!--About-->
     <div class='mt-3 col-md-11' [hidden]=!showAbout>
@@ -95,7 +97,7 @@
       <div class='mt-3 col-md-11' [hidden]=!showProjects>
           <div class="card">
             <div class="card-body text-justify">
-              <h5 (click)='open("https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/")' class="card-title pointer">UHCL-CSE Portal(Full Stack Angular | Agile)</h5>
+              <h5 (click)='open("https://d2vqyricq214vc.cloudfront.net/UHCL_CSE_PORTAL/")' class="card-title pointer" style="color:blue">UHCL-CSE Portal(Full Stack Angular | Agile)</h5>
               <p>Major tools and technologies used are Microsoft visual studio code, <span style="font-weight: bold;">Angular 8</span>, Angular Material Modules, PrimeNG Modules, <span style="font-weight: bold;">Firebase </span>(for DB, Storage Buckets, Cloud Functions), Microsoft Azure-Active directory services, JavaScript, TypeScript, Bootstrap/CSS, HTML, GitHub for version control, <span style="font-weight: bold;">AWS S3 and CloudFront</span> for hosting.</p><p>
                 In this portal a user can log in using <span style="font-weight: bold;">Microsoft Authentication</span> then based upon authorization he can add access privileges for members, can create a meeting, can upload a PDF document and also write meeting minutes which can be approved/ rejected by providing certain comments. Access to collect attendance for a meeting is also provided. Also, for each important activity like action to be taken on a meeting, specified users will be notified with timely Emails using <span style="font-weight: bold;">Google Cloud Scheduler</span>.
               </p><p>Moreover, this application provides access to upload a student admission/waiver PDF documents which can be viewed by the department authorized members and can provide a decision along with feedback.
@@ -105,7 +107,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-          <h5 (click)='open("https://github.com/Bharath-Gandham/E-Airlines-iOS-App")' class='pointer'>E Airlines</h5>
+          <h5 (click)='open("https://github.com/Bharath-Gandham/E-Airlines-iOS-App")' class='pointer' style="color:blue">E Airlines</h5>
             <p>
               In this <span style="font-weight: bold;">iOS application,</span> the user can search for the status of flights that are currently running. Also, they can search for all the available flights from a location to another on a particular date. Moreover, this application can fetch all the nearby airports upon entering a location. All the network/data issues and errors are handled properly. All this data will be a real-time one which is fetched from <span style="font-weight: bold;"></span>Lufthansa Airlines API.
             </p>
@@ -114,7 +116,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-          <h5 (click)='open("https://github.com/Bharath-Gandham/Hangman-iOS-Application")' class='pointer'>HangMan Application</h5>
+          <h5 (click)='open("https://github.com/Bharath-Gandham/Hangman-iOS-Application")' class='pointer' style="color:blue">HangMan Application</h5>
             <p>
               In this <span style="font-weight: bold;">iOS game application,</span> the user selects a level of play, and he needs to randomly guess the words depending upon the number of alphabets available until he is out of his chances. It also makes different buzzer sounds depending upon the selection of the correct/wrong alphabet. The words are randomly picked depending upon the level of play from a <span style="font-weight: bold;"></span>Database.
             </p>
@@ -123,7 +125,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-            <h5 (click)='open("https://github.com/Bharath-Gandham/Student-Library-iOS-application")' class='pointer'>Student Library</h5>
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Student-Library-iOS-application")' class='pointer' style="color:blue">Student Library</h5>
             <p>
               In this iOS application, the user can add books that he borrowed from the library and can set a due date. Whenever due is being approached it will throw a notification to the user. Also, he can order/delete/view/rearrange the books that he added to the local database in the app.
             </p>
@@ -132,7 +134,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-            <h5 (click)='open("https://github.com/Bharath-Gandham/ToDoList-iOS-application")' class='pointer'>ToDo List</h5>
+            <h5 (click)='open("https://github.com/Bharath-Gandham/ToDoList-iOS-application")' class='pointer' style="color:blue">ToDo List</h5>
             <p>
               In this iOS application, user can Enter, Delete, Modify, Sort some to do things in his day to day life. Also, I used a Database in order to store and retrieve data when the application is loaded.
             </p>
@@ -141,7 +143,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-            <h5 (click)='open("https://github.com/Bharath-Gandham/Number-System-Converter")' class='pointer'>Number System Converter</h5>
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Number-System-Converter")' class='pointer' style="color:blue">Number System Converter</h5>
             <p>
               It is a single view iOS application where the user selects a source number system by choosing an option in segment control and gets output in remaining number systems by taking validated input with certain conditions. (Like binary input contains only 0’s and 1’s).
             </p>
@@ -150,7 +152,7 @@
           <hr>
           <div class="card">
             <div class="card-body text-justify">
-            <h5 (click)='open("https://github.com/Bharath-Gandham/Unit-Converter-iOS-app")' class='pointer'>Unit Converter</h5>
+            <h5 (click)='open("https://github.com/Bharath-Gandham/Unit-Converter-iOS-app")' class='pointer' style="color:blue">Unit Converter</h5>
             <p>
               It is a multi-view iOS application implemented by strong understanding of <span style="font-weight: bold;">MVC</span> where the user selects a choice from tab’s available and then selects the source and destination units from cells available in a table view, which navigates the user to the Input screen where he also gets a validated output and errors if occur.
             </p>
@@ -184,6 +186,7 @@
 
           </div>
         </div>
+
         </div>
 
 
