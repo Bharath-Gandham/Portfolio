@@ -19,6 +19,10 @@ export class NavigationBarComponent implements OnInit {
     percentile:90
   },
   {
+    name:"Spring Boot, Java, RESTful Web Services ",
+    percentile:80
+  },
+  {
     name:'.Net & C#',
     percentile:80
   },
@@ -39,11 +43,11 @@ export class NavigationBarComponent implements OnInit {
     percentile:100
   },
   {
-    name:"Java & Swift",
+    name:"Swift & iOS application development",
     percentile:80
   },
   {
-    name:"Agile, SCRUM, Version Control",
+    name:"SDLC, Agile, SCRUM, Version Control, CI/CD Pipeline, Unit Testing",
     percentile:90
   },
 ]
