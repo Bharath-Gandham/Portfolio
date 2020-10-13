@@ -13,6 +13,9 @@ export class NavigationBarComponent implements OnInit {
   showProjects:boolean=false;
   showSkillsAndProficiency: boolean=false;
   showContact:boolean=false;
+  AccentureSkills=['Angular','Java','Spring Boot','Microservices','HTML','CSS','JS','Typescript','RXJS','SQL','AWS','OAuth 2.0','SSO','GIT','.Net'];
+  TASkills=['HTML','CSS','JS','Typescript','SQL','Python'];
+  LabAssistantSkills=['TroubleShooting', 'Databases', 'SSMS']
   //skills1={{name:"Angular",percentile:90},Dot_Net:80,SQL_and_NoSQL:95,Object_Oriented_Programming:100,Java_C};
   skills=[{
     name:"Angular, JavaScript/TypeScript",
